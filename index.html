@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onmousemove="updateBackground(event)">
+    <header>
+        <h1>Anime World</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="naruto.html">Naruto</a>
+            <a href="aot.html">Attack on Titan</a>
+            <a href="deathnote.html">Death Note</a>
+            <a href="onepiece.html">One Piece</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Anime World!</h2>
+        <p>Learn about the best anime here. Click the links to see more about each one.</p>
+        <button id="surprise-button" onclick="showAlert()">Click Me for a Surprise!</button>
+        <section>
+            <h3>Popular Anime Characters</h3>
+            <ul id="dynamic-list">
+                <!-- List will be populated dynamically -->
+            </ul>
+            <button onclick="populateList()">Show Characters</button>
+        </section>
+        
+        <section id="poll-section">
+            <h3>What is your favorite anime?</h3>
+            <button class="vote-button" onclick="vote('Naruto')">Naruto</button>
+            <button class="vote-button" onclick="vote('Attack on Titan')">Attack on Titan</button>
+            <button class="vote-button" onclick="vote('Death Note')">Death Note</button>
+            <button class="vote-button" onclick="vote('One Piece')">One Piece</button>
+            <p id="poll-result">Please vote for your favorite anime!</p>
+        </section>
+    </main>
+    <footer>
+        <p>Anime World</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
